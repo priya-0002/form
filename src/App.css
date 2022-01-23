@@ -4,38 +4,35 @@
   outline: none;
 }
 
-
-
-
-
 #container {
   position: absolute;
- 
-  
   background-color: white;
-  width: 1200px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
- 
 }
 
-#left, #right {
-  margin: auto;
+#left {
   width: 100%;
   height: 100%;
 }
-#right{
+#right {
+  margin: auto;
+  width: 100%;
+  height: 100%;
   border-radius: 1%;
+  margin-top: -10%;
 }
 
 #left {
   background-image: url(https://images.unsplash.com/photo-1606343131474-abc41dc6bb7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHRleHRpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
-#welcome, #lorem {
+#welcome,
+#lorem {
   margin: 20px;
   text-shadow: var(--box-shadow);
 }
@@ -64,36 +61,87 @@
   transition: all 200ms;
   box-shadow: var(--box-shadow);
 }
-.client-info:focus {
+
+/* .client-info:focus {
   width: 80%;
-}
+} */
+
 label {
   position: absolute;
-  margin: -76px 130px;
-	font-size: 12px;
-	white-space: nowrap;
-	background: #fff;
-	padding: 0 5px;
-	color: #999;
+  margin: -76px 170px;
+  font-size: 12px;
+  white-space: nowrap;
+  background: #fff;
+  padding: 0 5px;
+  color: #999;
   transition: all 200ms;
   text-shadow: var(--box-shadow);
 }
-#email:focus ~ label[for="email"] {
+
+/* #email:focus ~ label[for="email"] {
   margin: -76px 70px;
 }
 #password:focus ~ label[for="password"] {
   margin: -76px 70px;
-}
+} */
+
 #submit {
   border: none;
   background-color: #9055ff;
   color: white;
-  width: 60%;
+  width: 15%;
+  height: 40px;
 }
 #submit:hover {
   background-color: #df98fa;
 }
+.submit-group {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.forgot {
+  text-decoration: none;
+  margin-top: 10px;
+}
 
+.forgot:hover {
+  text-decoration: underline;
+  color: #fa9898;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ff3333;
+  color: white;
+  width: 25%;
+  height: 40px;
+}
+
+.line {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-top: rgb(173, 173, 173);
+}
+
+.signin {
+  color: #ff5555;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 45%;
+  /* margin: auto; */
+}
+
+.signin:hover {
+  text-decoration: underline;
+  color: #fa9898;
+}
+/* 
 .social {
   background-color: #fff;
   display: block;
@@ -122,8 +170,4 @@ label {
 #google:hover {
   background-color: var(--google-color);
   color: white;
-}
-
-
-  
-
+} */
