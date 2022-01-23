@@ -1,38 +1,129 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+
+
+
+
+#container {
+  position: absolute;
+ 
+  
+  background-color: white;
+  width: 1200px;
+  height: 800px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+ 
+}
+
+#left, #right {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+#right{
+  border-radius: 1%;
+}
+
+#left {
+  background-image: url(https://images.unsplash.com/photo-1606343131474-abc41dc6bb7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHRleHRpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+#welcome, #lorem {
+  margin: 20px;
+  text-shadow: var(--box-shadow);
+}
+#welcome {
+  font-size: 75px;
+  font-weight: 300;
+  margin-top: 330px;
+  text-shadow: var(--box-shadow);
+}
+
+#login {
+  padding-top: 35%;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-shadow: var(--box-shadow);
+}
+.client-info {
+  display: block;
+  margin: 20px auto;
+  width: 60%;
+  height: 50px;
+  border: solid #999 1px;
+  border-radius: 5px;
+  text-indent: 15px;
+  transition: all 200ms;
+  box-shadow: var(--box-shadow);
+}
+.client-info:focus {
+  width: 80%;
+}
+label {
+  position: absolute;
+  margin: -76px 130px;
+	font-size: 12px;
+	white-space: nowrap;
+	background: #fff;
+	padding: 0 5px;
+	color: #999;
+  transition: all 200ms;
+  text-shadow: var(--box-shadow);
+}
+#email:focus ~ label[for="email"] {
+  margin: -76px 70px;
+}
+#password:focus ~ label[for="password"] {
+  margin: -76px 70px;
+}
+#submit {
+  border: none;
+  background-color: #9055ff;
+  color: white;
+  width: 60%;
+}
+#submit:hover {
+  background-color: #df98fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social {
+  background-color: #fff;
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition-duration: 200ms;
+  box-shadow: var(--box-shadow);
+  text-shadow: var(--box-shadow);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#facebook {
+  border: solid var(--facebook-color) 1px;
+  color: var(--facebook-color);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#facebook:hover {
+  background-color: var(--facebook-color);
+  color: white;
+}
+#google {
+  border: solid var(--google-color) 1px;
+  color: var(--google-color);
+}
+#google:hover {
+  background-color: var(--google-color);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
+
